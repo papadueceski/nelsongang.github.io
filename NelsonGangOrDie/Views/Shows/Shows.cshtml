@@ -1,0 +1,105 @@
+﻿
+@{
+    ViewBag.Title = "Shows";
+}
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+.header {
+    text-align: center;
+    padding: 32px;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+.column img {
+    margin-top: 12px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+</style>
+<div class="showsButtons">
+    <a class="foo">
+        <img src="~/Images/4.png" onclick="four()" width="7%" />
+        <img src="~/Images/4Hover.png" onclick="four()" width="7%"/>
+        </a>
+    @*<a class="foo">
+        <img src="~/Images/2.png" onclick="two()" width="7%" />
+        <img src="~/Images/2Hover.png" onclick="two()" width="7%" />
+        </a>*@
+    <a class="foo">
+        <img src="~/Images/1.png" onclick="one()" width="7%" />
+        <img src="~/Images/1Hover.png" onclick="one()" width="7%" />
+        </a>
+
+</div>
+<div class="row">
+    
+    <div class="column">
+        
+        <img src="~/Images/FullSizeRender-1.jpg" width="100%"/>
+        <img src="~/Images/FullSizeRender-2.jpg" width="100%" />
+   
+    </div>
+    <div class="column">
+        <img src="~/Images/FullSizeRender.jpg" width="100%" />
+        
+ 
+    </div>
+    <div class="column">
+        <img src="~/Images/FullSizeRender-3.jpg" width="100%"/>
+
+    </div>
+    <div class="column">
+        <img src="~/Images/FullSizeRender-4.jpg" width="100%"/>
+
+    </div>
+</div>
+
+<script>
+// Four images side by side
+function four() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "25%";
+    }
+}
+
+// Two images side by side
+function two() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "50%";
+    }
+}
+
+// Full-width images
+function one() {
+    var elements = document.getElementsByClassName("column");
+    var i;
+    for (i = 0; i < elements.length; i++) {
+        elements[i].style.width = "100%";
+    }
+}
+</script>
+

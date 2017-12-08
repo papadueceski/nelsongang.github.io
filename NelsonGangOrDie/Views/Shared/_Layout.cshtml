@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>@ViewBag.Title Nel$on Gang</title>
+    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    <script type = 'text/javascript' >
+        var appInsights=window.appInsights||function(config)
+        {
+            function r(config){ t[config] = function(){ var i = arguments; t.queue.push(function(){ t[config].apply(t, i)})} }
+            var t = { config:config},u=document,e=window,o='script',s=u.createElement(o),i,f;for(s.src=config.url||'//az416426.vo.msecnd.net/scripts/a/ai.0.js',u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=['Event','Exception','Metric','PageView','Trace','Ajax'];i.length;)r('track'+i.pop());return r('setAuthenticatedUserContext'),r('clearAuthenticatedUserContext'),config.disableExceptionTracking||(i='onerror',r('_'+i),f=e[i],e[i]=function(config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o),s}),t
+        }({
+            instrumentationKey:'4e877aa1-20cf-4470-8eec-8bb6bc877872'
+        });
+        
+        window.appInsights=appInsights;
+        appInsights.trackPageView();
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="menu">
+            <table align="center">
+                <tr>
+                    <td>
+                        <a class="foo" href="home">
+                            <img src="~/Images/home.png"  width="20%" max-height="115px"/>
+                            <img src="~/Images/homeHover.png"   width="20%" max-height="115px"/>
+                        </a>
+                    
+                    
+                        <a class="foo" href="video">
+                            <img src="~/Images/video.png"   width="25%" max-height="115px"/>
+                            <img src="~/Images/videoHover.png"  width="25%" max-height="115px"/>
+                        </a>
+                    
+                    
+                        <a class="foo" href="music">
+                            <img src="~/Images/music.png"  width="22%" max-height="115px" />
+                            <img src="~/Images/musicHover.png"  width="22%" max-height="115px"/>
+                        </a>
+                   
+                    
+                        <a class="foo" href="shows">
+                            <img src="~/Images/shows.png"  width="22%" max-height="115px"/>
+                            <img src="~/Images/showsHover.png" width="22%"max-height="115px"/>
+                        </a>
+                    </td>
+                </tr>
+            </table>
+        </div>  
+        
+ </header>
+
+       <div class="body-content">
+            
+           
+        @RenderBody()
+        @RenderSection("SPAViews", required: false)
+           <div class="socialmedia">
+               <table align="center">
+                   <tr>
+                
+                       <td><a href="https://twitter.com/nelsongangxxl">
+                           <img src="~/Images/twitter.png"  width="10%" />
+                       </a>
+                  
+                       <a href="https://www.instagram.com/nelsongangxxl/">
+                           <img src="~/Images/instagram.png"  width="10%" />
+                       </a>
+                   
+                       <a href="https://www.youtube.com/channel/UCpPCrj7g_3mWXBHsDinER9A">
+                           <img src="~/Images/YouTube.png"  width="10%" />
+                       </a>
+                    
+                       <a href="https://soundcloud.com/nelsongang">
+                           <img src="~/Images/SoundCloud.png"  width="10%" />
+                       </a>
+                      
+                       <a href="https://www.snapchat.com/add/jakenelson1st">
+                           <img src="~/Images/snapchat.png"  width="10%" />
+                       </a>
+                       
+                       <a href="https://itunes.apple.com/us/artist/nel%24on/980164051">
+                           <img src="~/Images/itunes.png"  width="10%" />
+                       </a>
+                       <a href="https://www.google.com/url?q=https%3A%2F%2Fopen.spotify.com%2Falbum%2F6Saxis6WhwMfUbXaasISeo&sa=D&sntz=1&usg=AFQjCNFxWfLHgJ_okM6JaJUxe84S73YItw">
+                           <img src="~/Images/Spotify.png" width="10%" />
+                       </a>
+                       </td>
+                   </tr>
+               </table>
+           </div>
+           <style>
+               .foo img:last-child {
+                   display: none;
+               }
+
+               .foo:hover img:first-child {
+                   display: none;
+               }
+
+               .foo:hover img:last-child {
+                   display: inline-block;
+               }
+           </style>
+        
+        @*<footer>
+            <p color="purple">&copy; @DateTime.Now.Year - Nel$on Gang</p>
+        </footer>*@
+    </div>
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("Scripts", required: false)
+    @*<script type="text/javascript">
+            $(function() {
+                $("div.scrollable").scrollable ({ size: 6, interval: 3000,loop: true, speed: 400});
+            });
+    </script>*@
+</body>
+</html>
