@@ -158,7 +158,9 @@
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.Web.DynamicData" />
-    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.Entity">
+      <Private>False</Private>
+    </Reference>
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
@@ -281,6 +283,7 @@
     <Content Include="Images\FullSizeRender-2.jpg" />
     <Content Include="Images\FullSizeRender-3.jpg" />
     <Content Include="Images\FullSizeRender-4.jpg" />
+    <Content Include="Images\FullSizeRender-5.jpg" />
     <Content Include="Images\FullSizeRender.jpg" />
     <Content Include="Images\gif3.gif" />
     <Content Include="Images\home.png" />

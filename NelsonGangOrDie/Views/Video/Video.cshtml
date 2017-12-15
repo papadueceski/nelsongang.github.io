@@ -2,12 +2,60 @@
 @{
     ViewBag.Title = "Video";
 }
-<div class="videos">
-    <iframe width="640" height="352" src="https://www.youtube.com/embed/8qt2Wfi3MWc?autoplay=true" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    <iframe width="640" height="352" src="https://www.youtube.com/embed/oInu1Hggd4A" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    <iframe width="640" height="352" src="https://www.youtube.com/embed/8F-Q9RKztrU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    <iframe width="640" height="352" src="https://www.youtube.com/embed/VH1TJRJ6uZM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
-    @*<iframe width="100%" height="600" src="https://www.youtube.com/embed/rsUpo841WVY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>*@
-</div>
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83806060-2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-83806060-2');
+    </script>
+
+</head>
+
+<div class="vid-container">
+    <iframe width="90%" height="480" src="https://www.youtube.com/embed/8qt2Wfi3MWc?autoplay=true" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+<div class="vid-container">
+    <iframe width="90%" height="480" src="https://www.youtube.com/embed/oInu1Hggd4A" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    </div>
+    <div class="vid-container">
+        <iframe width="90%" height="480" src="https://www.youtube.com/embed/VH1TJRJ6uZM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+        </div>
+        <div class="vid-container">
+            <iframe width="90%" height="480" src="https://www.youtube.com/embed/8F-Q9RKztrU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+            </div>
 
 
+
+
+
+
+            <div class="videos">
+
+                @*<iframe width="100%" height="600" src="https://www.youtube.com/embed/rsUpo841WVY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>*@
+            </div>
+
+
+            <style>
+                /* Youtube Reflexive */
+                .vid-container {
+                    position: relative;
+                    padding-bottom: 50%;
+                    padding-top: 35px;
+                    height: 0;
+                    overflow: hidden;
+                }
+
+                    .vid-container iframe,
+                    .vid-container object,
+                    .vid-container embed {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+            </style>

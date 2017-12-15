@@ -2,11 +2,22 @@
 @{
     ViewBag.Title = "_home";
 }
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83806060-2"></script>
+    <script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
+  gtag('config', 'UA-83806060-2');
+    </script>
+
+</head>
 
 <div class="homeBody">
    
-    <img src="~/Images/gif3.gif" width="100%"/>
+    <h1><img src="~/Images/gif3.gif" width="100%" /></h1>
     <div class="showsButtons">
         <a class="foo">
             <img src="~/Images/4.png" onclick="four()" width="7%" />
