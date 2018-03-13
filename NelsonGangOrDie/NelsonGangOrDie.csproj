@@ -278,6 +278,7 @@
     <Content Include="Images\2Hover.png" />
     <Content Include="Images\4.png" />
     <Content Include="Images\4Hover.png" />
+    <Content Include="Images\Agoff Orangekush.png" />
     <Content Include="Images\Dashing.jpg" />
     <Content Include="Images\FullSizeRender-1.jpg" />
     <Content Include="Images\FullSizeRender-2.jpg" />
@@ -290,8 +291,13 @@
     <Content Include="Images\homeHover.png" />
     <Content Include="Images\instagram.png" />
     <Content Include="Images\itunes.png" />
+    <Content Include="Images\Jake Nelson Rapper iphonex Nelsongang Sweatshirt Promo1.jpg" />
+    <Content Include="Images\Jake Nelson Rapper iphonex Nelsongang Sweatshirt Promo2.JPG" />
+    <Content Include="Images\Jake Nelson Rapper iphonex Nelsongang Sweatshirt Promo3.JPG" />
     <Content Include="Images\music.png" />
     <Content Include="Images\musicHover.png" />
+    <Content Include="Images\Nelson to the Gang.JPG" />
+    <Content Include="Images\Nelson-Hoodie-Gif.gif" />
     <Content Include="Images\picture1.jpg" />
     <Content Include="Images\picture10.jpg" />
     <Content Include="Images\picture12.jpg" />
@@ -352,6 +358,9 @@
     <Content Include="ApplicationInsights.config">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <None Include="Properties\PublishProfiles\BishopFinePlumbing - Web Deploy.pubxml" />
+    <None Include="Properties\PublishProfiles\NelsonGangOrDie - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\NelsonGangOrDie - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\NelsonGangOrDie - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

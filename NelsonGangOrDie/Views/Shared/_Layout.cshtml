@@ -1,38 +1,13 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-83806060-2"></script>
-    <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'UA-83806060-2');
-    </script>
 
-    <meta charset="utf-8" />
-    <title>@ViewBag.Title Nel$on Gang</title>
-    <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    @Styles.Render("~/Content/css")
-    @Scripts.Render("~/bundles/modernizr")
-    <script type = 'text/javascript' >
-        var appInsights=window.appInsights||function(config)
-        {
-            function r(config){ t[config] = function(){ var i = arguments; t.queue.push(function(){ t[config].apply(t, i)})} }
-            var t = { config:config},u=document,e=window,o='script',s=u.createElement(o),i,f;for(s.src=config.url||'//az416426.vo.msecnd.net/scripts/a/ai.0.js',u.getElementsByTagName(o)[0].parentNode.appendChild(s),t.cookie=u.cookie,t.queue=[],i=['Event','Exception','Metric','PageView','Trace','Ajax'];i.length;)r('track'+i.pop());return r('setAuthenticatedUserContext'),r('clearAuthenticatedUserContext'),config.disableExceptionTracking||(i='onerror',r('_'+i),f=e[i],e[i]=function(config, r, u, e, o) { var s = f && f(config, r, u, e, o); return s !== !0 && t['_' + i](config, r, u, e, o),s}),t
-        }({
-            instrumentationKey:'4e877aa1-20cf-4470-8eec-8bb6bc877872'
-        });
-        
-        window.appInsights=appInsights;
-        appInsights.trackPageView();
-    </script>
-</head>
 
 <body>
     <header>
+        <div class="homeBody">
+            <a href="http://nelsongang.bigcartel.com/"><img src="~/Images/Nelson-Hoodie-Gif.gif" width="20%" /></a>
+        </div>
         <div class="menu">
             <table align="center">
                 <tr>
@@ -75,11 +50,11 @@
                <table align="center">
                    <tr>
                 
-                       <td><a href="https://twitter.com/nelsongangxxl">
+                       <td><a href="https://twitter.com/nelsongangXO">
                            <img src="~/Images/twitter.png"  width="10%" />
                        </a>
                   
-                       <a href="https://www.instagram.com/nelsongangxxl/">
+                       <a href="https://www.instagram.com/nelsongangxo/">
                            <img src="~/Images/instagram.png"  width="10%" />
                        </a>
                    
@@ -134,3 +109,15 @@
     </script>*@
 </body>
 </html>
+<style>
+    body{
+        background-color:black;
+        text-align:center;
+    }
+    .socialmedia{
+        text-align:center;
+    }
+    menu{
+        text-align:center;
+    }
+</style>
